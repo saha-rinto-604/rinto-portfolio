@@ -9,7 +9,10 @@ for (const width of [375, 430, 768, 1024, 1440]) {
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
     await page.goto('/rinto-portfolio/');
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('I buildintelligentsystems.');
-    await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(async () => {
+      await document.fonts.ready;
+      await Promise.all(document.getAnimations().map(animation => animation.finished.catch(() => undefined)));
+    });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
     const badImages = await page.locator('img').evaluateAll(images => images.filter(img => !(img as HTMLImageElement).complete || (img as HTMLImageElement).naturalWidth === 0).length);
     expect(badImages).toBe(0);
