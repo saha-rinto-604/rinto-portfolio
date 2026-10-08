@@ -1,6 +1,7 @@
 export const skills = [
-  { label: 'Languages', items: ['Java', 'TypeScript', 'Python', 'PHP', 'C', 'SQL'] },
-  { label: 'Interfaces', items: ['React', 'React Native', 'Next.js', 'Tailwind CSS'] },
-  { label: 'Systems & data', items: ['Spring Boot', 'FastAPI', 'PostgreSQL', 'MySQL'] },
-  { label: 'Tools & infrastructure', items: ['Git', 'Docker', 'RabbitMQ', 'Redis'] },
+  { label: 'Languages', items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'TypeScript'] },
+  { label: 'Web development', items: ['HTML', 'CSS', 'PHP', 'React', 'Next.js', 'Node.js', 'Laravel'] },
+  { label: 'Mobile development', items: ['React Native', 'Expo'] },
+  { label: 'Backend & databases', items: ['Spring Boot', 'FastAPI', 'MySQL', 'PostgreSQL'] },
+  { label: 'Development tools', items: ['Git', 'GitHub', 'Docker'] },
 ];

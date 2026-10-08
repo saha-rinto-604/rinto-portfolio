@@ -6,8 +6,8 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: 'clinora', number: '01', name: 'Clinora AI', category: 'Healthcare · Applied AI', status: 'In development',
-    headline: 'Healthcare workflows.\nEvidence before inference.',
-    description: 'A healthcare platform connecting medical reports, patient review, care coordination, and AI-assisted explanations. Verified observations stay separate from generated language.',
+    headline: 'Clinora AI',
+    description: 'A healthcare project for managing medical reports, verified patient information, doctor-led care, and privacy-conscious research. AI-assisted explanations stay separate from verified clinical facts and do not replace medical advice.',
     stack: ['React', 'TypeScript', 'Spring Boot', 'PostgreSQL', 'FastAPI'],
     repo: 'https://github.com/saha-rinto-604/Clinora_AI',
     nodes: ['Report upload', 'OCR extraction', 'Patient verification', 'Grounded explanation'],
@@ -20,9 +20,9 @@ export const projects: Project[] = [
   },
   {
     slug: 'shesafe', number: '02', name: 'SheSafe', category: 'Mobile · Personal safety', status: 'Development prototype',
-    headline: 'Connecting an alert\nto a response.',
-    description: 'A mobile safety application with incident reporting, location sharing, volunteer response, and incident messaging. Built across an Expo client and a modular API.',
-    stack: ['React Native', 'TypeScript', 'Expo', 'Express', 'MySQL'],
+    headline: 'SheSafe',
+    description: 'A mobile safety application for users, volunteers, police, and administrators. It brings together SOS alerts, live location sharing, responder coordination, route context, verification, and incident chat.',
+    stack: ['React Native', 'Expo', 'Node.js', 'Express', 'MySQL'],
     repo: 'https://github.com/saha-rinto-604/SheSafe',
     nodes: ['Report incident', 'Share location', 'Notify responders', 'Coordinate response'],
     engineering: 'Incident routes apply account and volunteer checks. Backend modules coordinate dispatch, notifications, location context, and messages. Device permissions and external service configuration are required; this is not a certified emergency service.',
@@ -34,9 +34,9 @@ export const projects: Project[] = [
   },
   {
     slug: 'resqher', number: '03', name: 'ResQher', category: 'Web · Earlier prototype', status: 'Prototype',
-    headline: 'An earlier exploration\nof community safety.',
-    description: 'A Laravel web application exploring location sharing and coordination between users, volunteers, law enforcement, and administrators.',
-    stack: ['PHP', 'Laravel', 'Blade', 'MySQL'],
+    headline: 'ResQher',
+    description: 'An earlier web-based safety application built with Laravel. It supports emergency alerts, location tracking, and coordination between users, volunteers, law enforcement, and administrators.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'Laravel', 'MySQL'],
     repo: 'https://github.com/saha-rinto-604/ResQher',
     nodes: ['User location', 'Volunteer availability', 'Response coordination'],
     engineering: 'Role-oriented routes, location storage, and incident-history models show the web implementation. It predates the separate SheSafe mobile project and needs a security review before any real deployment.',

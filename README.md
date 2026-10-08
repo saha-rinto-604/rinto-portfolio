@@ -1,6 +1,6 @@
 # Rinto Saha — Engineering Portfolio
 
-A personal portfolio for software engineering, applied AI, and security interests. Built around verified public repositories, with an original graphite-and-orange identity, a real portrait, and accessible project walkthroughs.
+A personal portfolio for Rinto Saha, a CSE undergraduate at United International University, teaching assistant, and IEEE UIU WIE Treasurer. CV-based content and verified public projects retain the existing graphite-and-orange identity, Manrope typography, portrait, and project visuals.
 
 [Visit the portfolio](https://saha-rinto-604.github.io/rinto-portfolio/) · [GitHub profile](https://github.com/saha-rinto-604)
 
@@ -8,7 +8,8 @@ A personal portfolio for software engineering, applied AI, and security interest
 
 ## What is here
 
-- Responsive portrait hero, biography, project stories, research interests, technology groups, academic work, and contact links.
+- One page: introduction, about, skills, teaching and leadership, projects, research interests, education, achievements, activities, and contact.
+- Downloadable two-page resume with private contact details removed from the public copy.
 - Expandable project engineering notes linking directly to source evidence.
 - Self-hosted Manrope, SVG branding, PNG social preview, canonical metadata, sitemap, and robots file.
 - Keyboard-accessible mobile navigation, visible focus, reduced-motion support, and a skip link.
@@ -27,7 +28,7 @@ src/sections/     Independent page sections
 src/data/         Profile, project evidence, and technology content
 src/lib/          Central URL and asset-path configuration
 src/fonts/        Self-hosted Manrope and its OFL license
-public/           Portrait, favicon, and brand assets
+public/           Portrait, resume PDF, favicon, and brand assets
 scripts/          Brand-asset generator and local static preview server
 tests/            Playwright behavior, responsive, and axe accessibility checks
 docs/             Public audit, design decisions, and verification notes
@@ -57,7 +58,11 @@ The production export is `out/`. The local preview serves it at `http://127.0.0.
 
 ## Content and configuration
 
-Edit `src/data/profile.ts` for biography, verified social links, research interests, and contact details. The optional email is empty and does not render a dead link. Edit `projects.ts` for projects and source evidence, and `skills.ts` for technology groups. Replace the portrait only with an authorized image of Rinto.
+Edit `src/data/profile.ts` for biography, social links, research interests, and contact details. Edit `journey.ts` for experience, education, and awards, `projects.ts` for projects and source evidence, and `skills.ts` for technology groups. Replace the portrait only with an authorized image of Rinto.
+
+The downloadable file is `public/resume/Rinto_Saha_Resume.pdf`, a copy of the supplied CV with the residential address replaced by Dhaka, Bangladesh and the phone number removed. The original is not stored in this repository. Academic and experience details come from the supplied CV. Project technology descriptions on the site use repository evidence; the original CV's Clinora stack was inconsistent and its project text has otherwise been preserved.
+
+The project already had one content route. No page redirects were needed. Previous `#work` and `#github` links remain valid alongside the new section navigation.
 
 No secrets or environment variables are required. Optional build-time public settings:
 
@@ -70,7 +75,7 @@ See `.env.example`. Do not store credentials in variables prefixed with `NEXT_PU
 
 ## Deployment
 
-GitHub Pages must use **GitHub Actions** as its source. Push to `main` to run lint, TypeScript, build, and six browser tests before deployment. Pull requests run the same checks without publishing. Pages permissions are confined to the deploy job.
+GitHub Pages must use **GitHub Actions** as its source. Push to `main` to run lint, TypeScript, build, and seven browser tests before deployment. Pull requests run the same checks without publishing. Pages permissions are confined to the deploy job.
 
 For a future custom domain, set both public URL variables at build time, update the workflow and URL expectations in tests, add the owned domain in Pages settings, and rebuild. No domain ownership is assumed. Next.js `basePath` handles framework assets; public files use the central `asset()` helper. Image optimization is disabled because Pages serves static files.
 
