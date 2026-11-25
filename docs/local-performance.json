@@ -1,0 +1,103 @@
+{
+  "note": "Single unthrottled local Chromium observation per viewport; not Lighthouse, field metrics, or an INP assessment.",
+  "observations": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "portrait": {
+        "source": "http://127.0.0.1:4173/rinto-portfolio/images/rinto-portrait-800.webp",
+        "width": 521,
+        "height": 652
+      },
+      "lcp": 288,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "/rinto-portfolio/_next/static/media/fedf4c9280b16369-s.p.woff2",
+          "bytes": 25136
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/css/90d1d882fcaeebdb.css",
+          "bytes": 29985
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/webpack-3d3bfaf4d90ea3b1.js",
+          "bytes": 3568
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/main-app-614f5eb6ac1b0fbc.js",
+          "bytes": 813
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 204021
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/794-e856732bce669520.js",
+          "bytes": 242704
+        },
+        {
+          "name": "/rinto-portfolio/images/rinto-portrait-800.webp",
+          "bytes": 50122
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/app/page-cf31884085eb192a.js",
+          "bytes": 2651
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/674-26be5469826cb5e2.js",
+          "bytes": 16689
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "portrait": {
+        "source": "http://127.0.0.1:4173/rinto-portfolio/images/rinto-portrait-480.webp",
+        "width": 344,
+        "height": 328
+      },
+      "lcp": 716,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "/rinto-portfolio/_next/static/media/fedf4c9280b16369-s.p.woff2",
+          "bytes": 25136
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/css/90d1d882fcaeebdb.css",
+          "bytes": 29985
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/webpack-3d3bfaf4d90ea3b1.js",
+          "bytes": 3568
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/main-app-614f5eb6ac1b0fbc.js",
+          "bytes": 813
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/app/page-cf31884085eb192a.js",
+          "bytes": 2651
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "bytes": 204021
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/674-26be5469826cb5e2.js",
+          "bytes": 16689
+        },
+        {
+          "name": "/rinto-portfolio/_next/static/chunks/794-e856732bce669520.js",
+          "bytes": 242704
+        },
+        {
+          "name": "/rinto-portfolio/images/rinto-portrait-480.webp",
+          "bytes": 22254
+        }
+      ]
+    }
+  ]
+}

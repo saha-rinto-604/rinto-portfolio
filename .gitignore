@@ -8,3 +8,6 @@ test-results/
 playwright-report/
 *.log
 .DS_Store
+
+# Private source assets must never enter a commit or public export.
+private-inputs/
